@@ -2,11 +2,14 @@
 import pygame
 import time
 import random
-
+from pygame import mixer
 
 # Initiate pygame. Always needed
 pygame.init() 
-
+mixer.init()
+mixer.music.load('Initial D - Deja Vu.mp3')
+mixer.music.set_volume(0.7)
+mixer.music.play()
 # Clock
 clock = pygame.time.Clock()
 
